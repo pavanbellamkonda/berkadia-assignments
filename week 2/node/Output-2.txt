@@ -1,0 +1,253 @@
+//Addition Program
+//Queries to be printed on console
+var quer = ['First value: \n', 'Second value: \n'];
+//Array to store values taken from console
+var nums = [];
+//Funtion to print 
+function ask(i){
+    process.stdout.write(`Enter ${quer[i]}`);
+}
+
+function add(a, b){
+    return a + b;
+}
+
+//Listener to handle stdin
+process.stdin.on('data',function(data) {
+    nums.push(parseInt(data.toString().trim(), 10));
+    if (nums.length < quer.length) {
+        ask(nums.length);
+    } else {
+        //calculate and print the calculated value
+        if (!isNaN(nums[0]) && !isNaN(nums[1])){
+            res = add(nums[0], nums[1]);
+            console.log('Added value: ' + res);
+            process.exit();
+        }
+        //to retake values if the values are not numbers
+        else {
+            console.log('Please enter valid values. \nEnter First value:');
+            nums = [];
+        }
+    }
+});
+
+console.log('------------------------------Addition Program------------------------------');
+ask(0);
+
+/* 
+OUTPUT:
+$ node addition.js
+------------------------------Addition Program------------------------------
+Enter First value:
+10
+Enter Second value:
+20
+Added value: 30
+
+*///Subtraction Program
+//Queries to be printed on console
+var quer = ['First value: \n', 'Second value: \n'];
+//Array to store values taken from console
+var nums = [];
+//Funtion to print 
+function ask(i){
+    process.stdout.write(`Enter ${quer[i]}`);
+}
+
+//Listener to handle stdin
+process.stdin.on('data',function(data) {
+    nums.push(parseInt(data.toString().trim(), 10));
+    if (nums.length < quer.length) {
+        ask(nums.length);
+    } else {
+        //calculate and print the calculated value
+        if (!isNaN(nums[0]) && !isNaN(nums[1])){
+            res = nums[0] - nums[1];
+            console.log('Subtracted value: ' + res);
+            process.exit();
+        }
+        //to retake values if the values are not numbers
+        else {
+            console.log('Please enter valid values. \nEnter First value:');
+            nums = [];
+        }
+    }
+});
+
+console.log('------------------------------Subtraction Program------------------------------');
+ask(0);
+
+/*
+OUTPUT:
+$ node subtraction.js
+------------------------------Subtraction Program------------------------------
+Enter First value:
+10
+Enter Second value:
+20
+Subtracted value: -10
+
+*/
+//Duplicates Program
+var n = 0;
+var nums = [];
+var dups = [];
+var ndups = [];
+//Funtions to print on console
+function ask(i){
+    process.stdout.write('Enter the length of array: \n');
+}
+function askarr(i){
+    if(i === 0){
+        console.log('Enter the first element: ')
+    }
+    else if( i === n-1){
+        console.log('Enter the last element. ')
+    }
+    else{
+        console.log('Enter the next element. ')
+    }
+}
+
+//Listener to handle stdin
+process.stdin.on('data',function(data) {
+    if(n === 0){
+        n = parseInt(data.toString().trim(), 10);
+        askarr(0);
+    }
+    else{
+        nums.push(parseInt(data.toString().trim(), 10));
+        if (nums.length < n) {
+            askarr(nums.length);
+        }
+        else {
+            for(var i=0; i<nums.length; i++){
+                if(ndups.includes(nums[i]) && !dups.includes(nums[i])){
+                    dups.push(nums[i])
+                }
+                else{
+                    ndups.push(nums[i])
+                }
+            }
+            if(dups.length === 0){
+                console.log('\nNo Dupicate Elements!')
+            }
+            else if(dups.length === 1){
+                console.log(`${dups[0]} is the duplicate element.`)
+            }
+            else {
+                console.log(`${dups} are the duplicate elements.`)
+            }    
+            process.exit()
+        }
+    }
+});
+
+console.log('------------------------------Duplicates Program------------------------------');
+ask(0);
+
+/*
+OUTPUT:
+$ node duplicate.js
+------------------------------Duplicates Program------------------------------
+Enter the length of array:
+6
+Enter the first element:
+10
+Enter the next element.
+20
+Enter the next element.
+10
+Enter the next element.
+20
+Enter the next element.
+30
+Enter the last element.
+10
+10,20 are the duplicate elements.
+
+*///Prime Number Program
+var n;
+//Funtion to print on console
+function ask(i){
+    process.stdout.write('Enter the number: \n');
+}
+//Function to return fib series
+function isPrime(n){
+    if(n === 1){
+        return "NOT PRIME";
+    }
+    if(n === 2){
+        return "PRIME";
+    }
+    else if(n%2 === 0){
+        return "NOT PRIME";
+    }
+    for(var i=3; i<=Math.sqrt(n); i+=2){
+        if(n%i === 0){
+            return "NOT PRIME";
+        }
+    }
+    return "PRIME";
+}
+
+//Listener to handle stdin
+process.stdin.on('data',function(data) {
+    n = parseInt(data.toString().trim(), 10);    
+    if (!isNaN(n)){
+        console.log(`${n} is ${isPrime(n)}`);
+        process.exit();
+    }
+    //to retake values if the values are not numbers
+    else {
+        console.log('Please enter valid value. \nEnter the number: ');
+    }
+
+});
+
+console.log('------------------------------Prime Number Program------------------------------');
+ask(0);
+
+/*
+OUTPUT:
+$ node primenum.js
+------------------------------Prime Number Program------------------------------
+Enter the number:
+23
+23 is PRIME
+
+*/
+var fs = require("fs")
+var newFile = "";
+
+fs.readFile('addition.js', function(err, data) {
+    if(err)
+        return console.log(err);
+    newFile += data.toString();
+    fs.readFile('subtraction.js', function(err, data) {
+        if(err)
+            return console.log(err);
+        newFile += data.toString();
+        fs.readFile('duplicate.js', function(err, data) {
+            if(err)
+                return console.log(err);
+            newFile += data.toString();
+            fs.readFile('primenum.js', function(err, data) {
+                if(err)
+                    return console.log(err);
+                newFile += data.toString();
+                fs.readFile('merge-1.js', function(err, data) {
+                    if(err)
+                        return console.log(err);
+                    newFile += data.toString();
+                    fs.writeFile('Output-1.txt', newFile, function(err, data){
+                        if (err) 
+                            console.log(err);
+                        console.log("Successfully Written to File.");
+                    });
+                });
+            });
+        });
+    });
+});
