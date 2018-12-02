@@ -1,7 +1,7 @@
 # nodejs-week1
 # Theory Assignment
 
-## 1.HTTP Methods
+## 1. HTTP Methods
 HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. Although they can also be nouns, these request methods are sometimes referred as HTTP verbs. Each of them implements a different semantic, but some common features are shared by a group of them: e.g. a request method can be safe, idempotent, or cacheable.
 ### GET
 The GET method is used to retrieve information from the given server using a given URL. Requests using GET should only retrieve data and should have no other effect on the data.
@@ -21,7 +21,7 @@ Describes the communication options for the target resource.
 Performs a message loop-back test along the path to the target resource.
 ### PATCH
 The PATCH method is used to apply partial modifications to a resource.
-## 2.HTTP Response Codes
+## 2. HTTP Response Codes
 HTTP response status codes indicate whether a specific HTTP request has been successfully completed. Responses are grouped in five classes: informational responses, successful responses, redirects, client errors, and servers errors.
 ### Information responses Section
 #### 100 Continue
