@@ -1,0 +1,7 @@
+Idempotency
+<------------------------------------------------------------------>
+An idempotent HTTP method is a HTTP method that can be called many times without different outcomes. It would not matter if the method is called only once, or ten times over. The result should be the same. Again, this only applies to the result, not the resource itself. This still can be manipulated (like an update-timestamp, provided this information is not shared in the (current) resource representation.
+Consider the following examples:
+-->  a = 4;
+-->  a++;
+The first example is idempotent: no matter how many times we execute this statement, a will always be 4. The second example is not idempotent. Executing this 10 times will result in a different outcome as when running 5 times.

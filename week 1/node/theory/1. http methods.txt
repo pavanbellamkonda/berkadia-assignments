@@ -1,0 +1,30 @@
+HTTP Methods
+<------------------------------------------------------------------------------------>
+HTTP defines a set of request methods to indicate the desired action to be performed for a given resource. Although they can also be nouns, these request methods are sometimes referred as HTTP verbs. Each of them implements a different semantic, but some common features are shared by a group of them: e.g. a request method can be safe, idempotent, or cacheable.
+
+GET
+The GET method is used to retrieve information from the given server using a given URL. Requests using GET should only retrieve data and should have no other effect on the data.
+
+HEAD
+Same as GET, but transfers the status line and header section only.
+
+POST
+A POST request is used to send data to the server, for example, customer information, file upload, etc. using HTML forms.
+
+PUT
+Replaces all current representations of the target resource with the uploaded content.
+
+DELETE
+Removes all current representations of the target resource given by a URL.
+
+CONNECT
+Establishes a tunnel to the server identified by a given URL.
+
+OPTIONS
+Describes the communication options for the target resource.
+
+TRACE
+Performs a message loop-back test along the path to the target resource.
+
+PATCH
+The PATCH method is used to apply partial modifications to a resource.

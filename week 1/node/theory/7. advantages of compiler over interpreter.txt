@@ -1,0 +1,8 @@
+Compiler vs Interpreter
+<--------------------------------------------------------------->
+A fundamental interpreter would read the program text character by character and determine what to do, then perform whatever instruction it receives. The next time the program is run it starts over with the program text again, character by character.
+A fundamental compiler would translate the entire source code into a machine language file. When the file is executed all the translation is done and the processor needs only to execute the machine code.
+Strictly speaking, if the program is run only once the interpreter and compiler could be approximately as efficient, although you rarely write a program that executes only once.
+Advantages of compiler over Interpreter are:
+-->The entire program is verified so there are no syntax or semantic errors
+-->The ececutable file is optimized by the compiler so it execute faster

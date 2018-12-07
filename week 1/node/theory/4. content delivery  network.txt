@@ -1,0 +1,9 @@
+Content Delivery Network
+<------------------------------------------------>
+A content delivery network (CDN) is a system of distributed servers that deliver pages and other Web content to a user, based on the geographic locations of the user, the origin of the webpage and the content delivery server. This service is effective in speeding the delivery of content of websites with high traffic and websites that have global reach. The closer the CDN server is to the user geographically, the faster the content will be delivered to the user. CDNs also provide protection from large surges in traffic.
+
+--> How CDNs Work
+Servers nearest to the website visitor respond to the request. The content delivery network copies the pages of a website to a network of servers that are dispersed at geographically different locations, caching the contents of the page. When a user requests a webpage that is part of a content delivery network, the CDN will redirect the request from the originating site's server to a server in the CDN that is closest to the user and deliver the cached content. CDNs will also communicate with the originating server to deliver any content that has not been previously cached. The process of bouncing through CDNs is nearly transparent to the user. The only way a user would know if a CDN has been accessed is if the delivered URL is different than the URL that has been requested.
+
+-->Many Businesses Use CDNs
+When delivering large scale websites to a global audience, CDNs can reduce latency, accelerate site load times, reduce bandwidth consumption secure applications and even block data scrappers and other forms of spammers hitting your server.

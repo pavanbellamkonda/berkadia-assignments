@@ -1,0 +1,9 @@
+V8 Engine
+<----------------------------------------------------------------------------------------------------------------------------------------------->
+-->A Javascript Engine is a program that converts Javascript code into lower level or machine code that microprocessors can understand.
+-->V8 is a powerful open source Javascript engine provided by Google.
+-->The Chrome V8 engine :
+	-->The V8 engine is written in C++ and used in Chrome and Nodejs.
+	-->It implements ECMAScript as specified in ECMA-262.
+	-->The V8 engine can run standalone and we can embed it with our own C++ program.
+-->Allowing us to write code in C++ and making it available to JavaScript makes it possible to add more features to JavaScript. Node.js in itself is a C++ implementation of a V8 engine allowing server side programming and networking applications.

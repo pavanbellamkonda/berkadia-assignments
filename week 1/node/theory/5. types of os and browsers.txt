@@ -1,0 +1,35 @@
+Types of OS
+<-------------------------------------------------------------------------------->
+There are four general types of operating systems. 
+Their use depends on the type of computer and the type of applications that will be run on those computers.
+
+1)Real-time operating systems (RTOS) :
+ These are used to control machinery, scientific instruments, and industrial systems. In general, the user does not have much control over the functions performed by RTOS.
+ Ex:eCos, LynxOS, QNX
+
+2)Single-user, single-task operating system:
+  This OS allow one user to do one thing at a time. An example of a single-user, single-task operating system is the operating system used by personal digital assistants (PDAs), also known as handheld computers.
+  Ex:PalmOS- an OS used for mobile OS and discontinued in 1996.
+
+3)Single-user, multi-tasking operating system:
+ This OS allow a single user to simultaneously run multiple applications on their computer. This is the type of operating system found on most personal desktop and laptop computers. 
+  Ex:i)Microsoft Windows -- Core of the OS components like kernel, file system, memory manager etc are written in C. Most of the User mode components like Security, management utils are mix of C and C++.
+     ii)Mac OS -- Cocoa mostly in Objective-C. Kernel written in C, some parts in assembly.Much of Cocoa is implemented in Objective-C, an object-oriented language that is compiled to run at incredible speed. Objective-C is a superset of C.
+     iii)Linux -- kernel in C, A lot of the rest (especially the desktop GUIs) in C++. And everything else is written in all other languages the programmer felt was preferable (Python, Java, C, C++, Haskell, Scheme, Bash, JavaScript, Common Lisp, Scala, Clojure, Erlang, OCaml, etc.) as it is an open source and people can modify it.
+
+4)Multi-user operating systems allow multiple users to simultaneously use the resources on a single computer. 
+Ex:Unix-Early on in its development, Unix was rewritten in the C programming language. As a result, Unix has always been closely tied to C and then later C++. 
+
+Types of Browsers
+1) Google Chrome:
+Popular Browser by Internet giant Google. Focuses on enhanced performance of web applications. Behind the scene chrome uses V8 JavaScript Engine which is an open source JavaScript engine developed by The Chromium Project for the Google Chrome web browser to run Javascript programs.
+
+2) Mozilla Firefox
+Mozilla Firefox is a free and open-source web browser developed by Mozilla Foundation and its subsidiary, Mozilla Corporation. Firefox is available for Windows, macOS, Linux, BSD, illumos and Solaris operating systems. It uses the Gecko engine as its Javascript engine.
+
+3) Safari
+Safari is a graphical web browser developed by Apple, based on the WebKit engine. It uses the Nitro engine as its Javascript engine.
+
+4) Microsoft Edge
+Microsoft Edge is a graphical web browser developed by Microsoft and included in Windows 10. It uses the Chakra engine as its Javascript engine.
+

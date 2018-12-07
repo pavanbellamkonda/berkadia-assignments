@@ -1,0 +1,8 @@
+Why NodeJS?
+<------------------------------------------------------------------------------>
+-->Node.js is an open source, cross-platform runtime environment which can be used for server-side and networking applications. 
+-->Node.js applications are written in JavaScript and can be run within the Node.js runtime on OS X, Microsoft     Windows, Linux 
+-->Node.js provides an event-driven architecture and a non-blocking I/O API that optimizes an application's throughput and scalability.These technologies are commonly used for real-time web applications.
+-->Node.js uses the Google V8 JavaScript engine to execute code, and a large percentage of the basic modules are   written in JavaScript.
+-->Node.js contains a built-in library to allow applications to act as a Web server without software such as Apache HTTP Server.
+-->As Node.js uses event loop, it is efficient than other servers such as Apache except in cases such as intense CPU computation.

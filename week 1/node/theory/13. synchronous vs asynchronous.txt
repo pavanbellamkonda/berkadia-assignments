@@ -1,0 +1,7 @@
+Synchronous Vs Asynchronous Programming
+<----------------------------------------------------------------------------------------------------------------------------------------------->
+-->In Synchronous program execution, program starts at the first line of source code and each line of code executed sequentially thereafter. Each time a function is called, program execution waits until that function returns before continuing to the next line of code.
+-->Suppose a function is called to start a time consuming process. With synchronous programming, your program is “stuck,” waiting for the process to end, with no way out.
+-->Using Asynchronous programming, the program will not wait until the function executes. In single thread environment, thread once starts executing a task it can hold it in mid, save the current state and start executing another task. In multi-thread environment, all the threads can work in asynchronous model as well.
+-->Asynchronous programming model ensures non-blocking code execution.
+-->JavaScript is asynchronous in nature and so is NodeJS.

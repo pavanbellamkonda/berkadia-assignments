@@ -1,0 +1,4 @@
+libuv
+<----------------------------------------------------------------------------------------------------------------------------------------------->
+-->libuv is cross-platform support library which was originally written for NodeJS. It’s designed around the event-driven asynchronous I/O model.
+-->The library provides much more than a simple abstraction over different I/O polling mechanisms: ‘handles’ and ‘streams’ provide a high level abstraction for sockets and other entities; cross-platform file I/O and threading functionality is also provided, amongst other things.
