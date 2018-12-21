@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 })
 
 //Listen on port 3000
-server = app.listen(3000, () => console.log("Listening on 3000"))
+server = app.listen(4000, () => console.log("Listening on 4000"))
 
 //socket.io instantiation
 const io = require("socket.io")(server)

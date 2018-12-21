@@ -1,0 +1,18 @@
+<div class="title">
+<h2>News Application</h2>
+</div>
+<div class="sidenav">
+<ul *ngFor="let source of mSources" (click)="searchArticles(source.id)">
+  <span class="source-name"> {{source.name}}</span>
+</ul>
+</div>
+<div class="main">
+  <ul *ngFor="let article of mArticles">
+    <h2>{{ article.title }}</h2>
+    <p>Source: <b>{{ article.source.name }}</b> </p>
+      <p>
+        {{article.description}}
+      </p>
+  </ul>
+</div>
+

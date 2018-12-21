@@ -1,0 +1,14 @@
+{
+  "name": "application-methods",
+  "version": "1.0.0",
+  "description": "",
+  "main": "examples.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pa1b",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
