@@ -1,0 +1,22 @@
+<div class="album py-5 bg-light">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-4" *ngFor="let country of countries">
+            <div class="card mb-4 shadow-sm" >
+                <a routerLink="/{{country.code}}"><img class="bd-placeholder-img card-img-top" width="100%" height="225" src="https://www.countryflags.io/{{country.code}}/flat/64.png" alt="Image not available"></a>
+                <div class="card-body">
+                    <h3 class="card-text">{{country.name}}</h3>
+                    <p class="card-text"> Data from <strong>{{country.locations}}</strong> locations across <strong>{{country.cities}}</strong> cities of this country are available.</p>
+                    <p class="card-text"><strong>{{country.count}}</strong> measurements are taken in this country.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-sm btn-outline-secondary">View Details</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

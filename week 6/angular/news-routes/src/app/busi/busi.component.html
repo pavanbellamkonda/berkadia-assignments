@@ -1,0 +1,25 @@
+<div class="container" style="padding-top:55px;">
+  <h1 class="display-3">Business News!</h1>
+  <p>Find Business news from different news sources here!</p>
+  <p>Select your desired category of news from Navigation Bar above!</p>
+</div>
+
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let article of articles">
+        <div class="card mb-4 shadow-sm">
+          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src={{article.urlToImage}} alt="Image not available">
+          <div class="card-body">
+            <p class="card-text" style="height: 100px; width: 250px">{{article.title}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href={{article.url}} target=_blank><button type="button" class="btn btn-sm btn-outline-secondary">Full Article</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

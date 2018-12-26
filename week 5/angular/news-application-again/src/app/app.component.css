@@ -1,0 +1,40 @@
+.title {
+    overflow: hidden;
+    background-color: #35363b;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1;
+    font-family: 'Courier New', Courier, monospace;
+    color: #f1f1f1;
+}
+
+.source-name {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 200px;
+    position: fixed;
+    z-index: 0;
+    top: 10;
+    left: 0;
+    background-color: #f1f1f1; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    margin-left: 200px; 
+    position: fixed; 
+    z-index: 0; 
+    top: 10; 
+    left: 0;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f1f1f1; 
+    overflow-x: hidden; 
+    padding-top: 65px;
+    height: 100%; 
+}

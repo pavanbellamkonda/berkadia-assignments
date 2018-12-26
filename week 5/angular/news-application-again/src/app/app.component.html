@@ -1,0 +1,39 @@
+<style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 15px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
+  <div class="title">
+  <h2>News Application</h2>
+  </div>
+  <div class="sidenav">
+  <ul *ngFor="let source of mSources; let index=index; let even=even; let odd=odd;" (click)="searchArticles(source.id)">
+    <div *ngIf="odd"  [ngStyle]="{'background-color': '#dddddd'}">
+      <span class="source-name"> {{index}}. {{source.name}}</span>
+    </div>
+    <div *ngIf="even" [ngClass]="{'background-color': '#f1f1f1'}">
+        <span class="source-name"><b>{{index}}. {{source.name}}</b></span>
+      </div>
+  </ul>
+  </div>
+  <div class="main">
+    <table *ngFor="let article of mArticles" >
+      <th style="font-size:23px"><b>{{ article.title }}</b></th>
+      <tr><td>Source: <b>{{ article.source.name }}</b></td></tr>
+      <tr><td>{{article.description}}</td></tr>
+    </table>
+    <br>
+  </div>
+  
