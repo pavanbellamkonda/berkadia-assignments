@@ -1,0 +1,253 @@
+{
+    "movies": [
+        {
+            "name": "Iron Man 1",
+            "image": "https://www.vintagemovieposters.co.uk/wp-content/uploads/2015/07/irinmanquadlarge1-482x357.jpg",
+            "cast": "Robert Downey Jr., Gwyneth Paltrow",
+            "ratings": 4
+        },
+        {
+            "name": "Iron Man 2",
+            "image": "https://www.vintagemovieposters.co.uk/wp-content/uploads/2018/05/IMG_3185-482x358.jpg",
+            "cast": "Robert Downey Jr., Gwyneth Paltrow",
+            "ratings": 4
+        },
+        {
+            "name": "Iron Man 3",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZBGrvBZwClqveeImovT3rfPsn3_zlH43hZKPRJIDCysReOom8OA",
+            "cast": "Robert Downey Jr., Gwyneth Paltrow",
+            "ratings": 4
+        },
+        {
+            "name": "Captain America The First Avenger",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqSNQvL4WWbz5ua4jwC-pUIjfZtO3viQUpseRNQHgLvS0jsBEe",
+            "cast": "Chris Evans, Hayley Atwell",
+            "ratings": 4
+        },
+        {
+            "name": "Captain America The Winter Soldier",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCWV6byjKeh7ugcUmj7TsKEIK7hMkDoOlPDBsjOqZjgXV771eh",
+            "cast": "Chris Evans, Scarlett Johansson",
+            "ratings": 4
+        },
+        {
+            "name": "Captain America Civil War",
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjAI8Su6A6eseTS99DPnAaPF2mJRIm9OwZVgCDw0Z93mu5KfG-wQ",
+            "cast": "Chris Evans, Robert Downey Jr.",
+            "ratings": 4
+        }
+    ],
+    "theatres": [
+        {
+            "name": "PVR",
+            "location": "Gachibowli",
+            "zip": 500032
+        },
+        {
+            "name": "AMB",
+            "location": "Gachibowli",
+            "zip": 500032
+        },
+        {
+            "name": "Asian",
+            "location": "Uppal",
+            "zip": 500013
+        },
+        {
+            "name": "Miraj",
+            "location": "Kothapet",
+            "zip": 500035
+        },
+        {
+            "name": "INOX",
+            "location": "Kachiguda X Road",
+            "zip": 500034
+        }
+    ],
+    "shows": [
+        {
+            "movie": "Iron Man 1",
+            "theatre": "PVR",
+            "price": 200,
+            "timings": {
+                "date": "Today",
+                "time": [
+                    {
+                        "1:00 PM": {
+                            "total": 100,
+                            "booked": 10
+                        },
+                        "11:00 PM": {
+                            "total": 100,
+                            "booked": 20
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "movie": "Iron Man 2",
+            "theatre": "PVR",
+            "price": 200,
+            "timings": {
+                "date": "Today",
+                "time": [
+                    {
+                        "7:00 PM": {
+                            "total": 100,
+                            "booked": 25
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "movie": "Iron Man 2",
+            "theatre": "AMB",
+            "price": 200,
+            "timings": {
+                "date": "Today",
+                "time": [
+                    {
+                        "1:00 PM": {
+                            "total": 100,
+                            "booked": 20
+                        },
+                        "11:00 PM": {
+                            "total": 100,
+                            "booked": 30
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "movie": "Iron Man 3",
+            "theatre": "AMB",
+            "price": 200,
+            "timings": {
+                "date": "Today",
+                "time": [
+                    {
+                        "7:00 PM": {
+                            "total": 100,
+                            "booked": 45
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "movie": "Iron Man 3",
+            "theatre": "Asian",
+            "price": 150,
+            "timings": {
+                "date": "Today",
+                "time": [
+                    {
+                        "1:00 PM": {
+                            "total": 100,
+                            "booked": 60
+                        },
+                        "11:00 PM": {
+                            "total": 100,
+                            "booked": 50
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "movie": "Captain America The Winter Soldier",
+            "theatre": "Asian",
+            "price": 150,
+            "timings": {
+                "date": "Today",
+                "time": [
+                    {
+                        "7:00 PM": {
+                            "total": 100,
+                            "booked": 40
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "movie": "Captain America The First Avenger",
+            "theatre": "Miraj",
+            "price": 150,
+            "timings": {
+                "date": "Today",
+                "time": [
+                    {
+                        "1:00 PM": {
+                            "total": 100,
+                            "booked": 40
+                        },
+                        "11:00 PM": {
+                            "total": 100,
+                            "booked": 50
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "movie": "Captain America Civil War",
+            "theatre": "Miraj",
+            "price": 150,
+            "timings": {
+                "date": "Today",
+                "time": [
+                    {
+                        "7:00 PM": {
+                            "total": 100,
+                            "booked": 90
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "movie": "Captain America The Winter Soldier",
+            "theatre": "INOX",
+            "price": 150,
+            "timings": {
+                "date": "Today",
+                "time": [
+                    {
+                        "10:00 AM": {
+                            "total": 100,
+                            "booked": 60
+                        },
+                        "11:00 PM": {
+                            "total": 100,
+                            "booked": 70
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "movie": "Captain America Civil War",
+            "theatre": "INOX",
+            "price": 150,
+            "timings": {
+                "date": "Today",
+                "time": [
+                    {
+                        "1:00 PM": {
+                            "total": 100,
+                            "booked": 85
+                        },
+                        "11:00 PM": {
+                            "total": 100,
+                            "booked": 100
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
