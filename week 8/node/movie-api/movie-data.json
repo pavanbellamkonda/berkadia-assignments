@@ -1,0 +1,151 @@
+{
+    "name": "pavan",
+    "data": [
+        {
+            "name": "Captain America Civil War",
+            "image1": "https://upload.wikimedia.org/wikipedia/en/5/53/Captain_America_Civil_War_poster.jpg",
+            "image2": "https://i.kinja-img.com/gawker-media/image/upload/s--6_c94prJ--/c_scale,f_auto,fl_progressive,q_80,w_800/fdqqtxnkamigyxylfqze.jpg",
+            "shows": [
+                {
+                    "tname": "PVR",
+                    "location": "Gachibowli",
+                    "timings": [
+                        {
+                            "time": "11:00 AM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "02:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "06:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "11:00 PM",
+                            "tickets": 180
+                        }
+                    ],
+                    "ratings": 4
+                },
+                {
+                    "tname": "Asian",
+                    "location": "Uppal",
+                    "timings": [
+                        {
+                            "time": "11:00 AM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "02:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "06:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "11:00 PM",
+                            "tickets": 180
+                        }
+                    ],
+                    "ratings": 4
+                },
+                {
+                    "tname": "Miraj",
+                    "location": "Kothapet",
+                    "timings": [
+                        {
+                            "time": "11:00 AM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "02:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "06:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "11:00 PM",
+                            "tickets": 180
+                        }
+                    ],
+                    "ratings": 4
+                },
+                {
+                    "tname": "BVK",
+                    "location": "LB Nagar",
+                    "timings": [
+                        {
+                            "time": "11:00 AM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "02:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "06:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "11:00 PM",
+                            "tickets": 180
+                        }
+                    ],
+                    "ratings": 4
+                },
+                {
+                    "tname": "Cinepolis",
+                    "location": "Panjagutta",
+                    "timings": [
+                        {
+                            "time": "11:00 AM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "02:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "06:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "11:00 PM",
+                            "tickets": 180
+                        }
+                    ],
+                    "ratings": 4
+                },
+                {
+                    "tname": "AMB",
+                    "location": "Gachibowli",
+                    "timings": [
+                        {
+                            "time": "11:00 AM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "02:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "06:00 PM",
+                            "tickets": 180
+                        },
+                        {
+                            "time": "11:00 PM",
+                            "tickets": 180
+                        }
+                    ],
+                    "ratings": 4
+                }
+            ],
+            "ratings": 4
+        }
+    ]
+}
