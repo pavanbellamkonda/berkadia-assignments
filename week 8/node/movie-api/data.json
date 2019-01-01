@@ -41,27 +41,27 @@
         {
             "name": "PVR",
             "location": "Gachibowli",
-            "zip": 500032
+            "pin": 500032
         },
         {
             "name": "AMB",
             "location": "Gachibowli",
-            "zip": 500032
+            "pin": 500032
         },
         {
             "name": "Asian",
             "location": "Uppal",
-            "zip": 500013
+            "pin": 500035
         },
         {
             "name": "Miraj",
             "location": "Kothapet",
-            "zip": 500035
+            "pin": 500035
         },
         {
             "name": "INOX",
             "location": "Kachiguda X Road",
-            "zip": 500034
+            "pin": 500035
         }
     ],
     "shows": [
