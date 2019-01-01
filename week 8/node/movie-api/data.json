@@ -69,185 +69,233 @@
             "movie": "Iron Man 1",
             "theatre": "PVR",
             "price": 200,
-            "timings": {
-                "date": "Today",
-                "time": [
-                    {
-                        "1:00 PM": {
-                            "total": 100,
-                            "booked": 10
+            "seats": [
+                {
+                    "date": "Today",
+                    "timings": [
+                        {
+                            "time": "1:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 10
+                            }
                         },
-                        "11:00 PM": {
-                            "total": 100,
-                            "booked": 20
+                        {
+                            "time": "11:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 20
+                            }
                         }
-                    }
-                ]
-            }
+                    ]
+                }
+            ]
         },
         {
             "movie": "Iron Man 2",
             "theatre": "PVR",
             "price": 200,
-            "timings": {
-                "date": "Today",
-                "time": [
-                    {
-                        "7:00 PM": {
-                            "total": 100,
-                            "booked": 25
+            "seats": [
+                {
+                    "date": "Today",
+                    "timings": [
+                        {
+                            "time": "7:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 25
+                            }
                         }
-                    }
-                ]
-            }
+                    ]
+                }
+            ]
         },
         {
             "movie": "Iron Man 2",
             "theatre": "AMB",
             "price": 200,
-            "timings": {
-                "date": "Today",
-                "time": [
-                    {
-                        "1:00 PM": {
-                            "total": 100,
-                            "booked": 20
+            "seats": [
+                {
+                    "date": "Today",
+                    "timings": [
+                        {
+                            "time": "1:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 20
+                            }
                         },
-                        "11:00 PM": {
-                            "total": 100,
-                            "booked": 30
+                        {
+                            "time": "11:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 30
+                            }
                         }
-                    }
-                ]
-            }
+                    ]
+                }
+            ]
         },
         {
             "movie": "Iron Man 3",
             "theatre": "AMB",
             "price": 200,
-            "timings": {
-                "date": "Today",
-                "time": [
-                    {
-                        "7:00 PM": {
-                            "total": 100,
-                            "booked": 45
+            "seats": [
+                {
+                    "date": "Today",
+                    "timings": [
+                        {
+                            "time": "7:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 45
+                            }
                         }
-                    }
-                ]
-            }
+                    ]
+                }
+            ]
         },
         {
             "movie": "Iron Man 3",
             "theatre": "Asian",
             "price": 150,
-            "timings": {
-                "date": "Today",
-                "time": [
-                    {
-                        "1:00 PM": {
-                            "total": 100,
-                            "booked": 60
+            "seats": [
+                {
+                    "date": "Today",
+                    "timings": [
+                        {
+                            "time": "1:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 60
+                            }
                         },
-                        "11:00 PM": {
-                            "total": 100,
-                            "booked": 50
+                        {
+                            "time": "11:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 50
+                            }
                         }
-                    }
-                ]
-            }
+                    ]
+                }
+            ]
         },
         {
             "movie": "Captain America The Winter Soldier",
             "theatre": "Asian",
             "price": 150,
-            "timings": {
-                "date": "Today",
-                "time": [
-                    {
-                        "7:00 PM": {
-                            "total": 100,
-                            "booked": 40
+            "seats": [
+                {
+                    "date": "Today",
+                    "timings": [
+                        {
+                            "time": "7:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 40
+                            }
                         }
-                    }
-                ]
-            }
+                    ]
+                }
+            ]
         },
         {
             "movie": "Captain America The First Avenger",
             "theatre": "Miraj",
             "price": 150,
-            "timings": {
-                "date": "Today",
-                "time": [
-                    {
-                        "1:00 PM": {
-                            "total": 100,
-                            "booked": 40
+            "seats": [
+                {
+                    "date": "Today",
+                    "timings": [
+                        {
+                            "time": "1:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 40
+                            }
                         },
-                        "11:00 PM": {
-                            "total": 100,
-                            "booked": 50
+                        {
+                            "time": "11:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 50
+                            }
                         }
-                    }
-                ]
-            }
+                    ]
+                }
+            ]
         },
         {
             "movie": "Captain America Civil War",
             "theatre": "Miraj",
             "price": 150,
-            "timings": {
-                "date": "Today",
-                "time": [
-                    {
-                        "7:00 PM": {
-                            "total": 100,
-                            "booked": 90
+            "seats": [
+                {
+                    "date": "Today",
+                    "timings": [
+                        {
+                            "time": "7:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 90
+                            }
                         }
-                    }
-                ]
-            }
+                    ]
+                }
+            ]
         },
         {
             "movie": "Captain America The Winter Soldier",
             "theatre": "INOX",
             "price": 150,
-            "timings": {
-                "date": "Today",
-                "time": [
-                    {
-                        "10:00 AM": {
-                            "total": 100,
-                            "booked": 60
+            "seats": [
+                {
+                    "date": "Today",
+                    "timings": [
+                        {
+                            "time": "10:00 AM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 60
+                            }
                         },
-                        "11:00 PM": {
-                            "total": 100,
-                            "booked": 70
+                        {
+                            "time": "11:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 70
+                            }
                         }
-                    }
-                ]
-            }
+                    ]
+                }
+            ]
         },
         {
             "movie": "Captain America Civil War",
             "theatre": "INOX",
             "price": 150,
-            "timings": {
-                "date": "Today",
-                "time": [
-                    {
-                        "1:00 PM": {
-                            "total": 100,
-                            "booked": 85
+            "seats": [
+                {
+                    "date": "Today",
+                    "timings": [
+                        {
+                            "time": "1:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 85
+                            }
                         },
-                        "11:00 PM": {
-                            "total": 100,
-                            "booked": 100
+                        {
+                            "time": "11:00 PM",
+                            "tickets": {
+                                "total": 100,
+                                "booked": 100
+                            }
                         }
-                    }
-                ]
-            }
+                    ]
+                }
+            ]
         }
     ]
 }
