@@ -21,7 +21,7 @@ const routes: Routes = [
   {
     path: ':id',
     component: LocationsComponent,
-    children:[
+    children: [
       {path: ':loc', component: MeasurementsComponent}
     ]
   }

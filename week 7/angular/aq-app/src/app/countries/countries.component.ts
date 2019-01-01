@@ -8,12 +8,12 @@ import { AqApiService } from '../aq-api.service';
   styleUrls: ['./countries.component.css']
 })
 export class CountriesComponent implements OnInit {
-  countries:Array<any>;
+  countries: Array<any>;
 
-  constructor(private api:AqApiService, private router: ActivatedRoute,
+  constructor(private api: AqApiService, private router: ActivatedRoute,
     private route: Router) { }
 
-  ngOnInit(){
-    this.api.countries().subscribe(data => this.countries = data["results"]);
+  ngOnInit() {
+    this.api.countries().subscribe(data => this.countries = data['results']);
   }
 }

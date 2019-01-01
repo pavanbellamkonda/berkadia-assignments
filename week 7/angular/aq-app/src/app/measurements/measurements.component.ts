@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, ParamMap} from "@angular/router";
+import {ActivatedRoute, ParamMap} from '@angular/router';
 import { AqApiService } from '../aq-api.service';
 
 @Component({
@@ -9,15 +9,15 @@ import { AqApiService } from '../aq-api.service';
 })
 export class MeasurementsComponent implements OnInit {
 
-  meas:Array<any>;
-  cName:String;
-  selected:String;
-  constructor(private api:AqApiService, private router: ActivatedRoute) { }
+  meas: Array<any>;
+  cName: String;
+  selected: String;
+  constructor(private api: AqApiService, private router: ActivatedRoute) { }
 
   ngOnInit() {
-    this.router.paramMap.subscribe( (params: ParamMap) =>{
-      this.selected = params.get('loc')
-      this.api.measures(params.get('loc')).subscribe(data => this.meas = data["results"]);
+    this.router.paramMap.subscribe( (params: ParamMap) => {
+      this.selected = params.get('loc');
+      this.api.measures(params.get('loc')).subscribe(data => this.meas = data['results']);
     });
   }
 
