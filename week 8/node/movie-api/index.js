@@ -90,10 +90,27 @@ app.post('/book', (req, res) => {
     var theatre = body.theatre;
     var date = body.date;
     var time = body.time;
+    var count = body.count;
     var show = data['shows'].find(show => show.theatre === theatre && show.movie === movie)
     var seats = show['seats'].find(seat => seat.date === date)
-    var result = seats['timings'].find(r => r.time === time)
-    res.end(JSON.stringify(result['tickets'], null, 4))
+    var result = seats['timings'].find(r => r.time === time).tickets;
+    if(count <= 6 && count >= 1){
+        if(count <= result.available){
+            result.available -= count;
+            seats['timings'].find(r => r.time === time).tickets = result;
+            show['seats'].find(seat => seat.date === date).timings = seats['timings'];
+            data['shows'].find(show => show.theatre === theatre && show.movie === movie).seats = show['seats'];
+            try{
+            fs.writeFileSync('data.json', JSON.stringify(data, null, 4));
+            res.end('Success')
+            }
+            catch(err) {
+                res.end('Error')
+            }
+        }
+        res.end('Error')
+    }
+    res.end('Error')
 })
 
 app.listen(3000, () => {
