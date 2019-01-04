@@ -7,7 +7,7 @@ import { NewsapiService } from '../newsapi.service';
   styleUrls: ['./sports.component.css']
 })
 export class SportsComponent implements OnInit {
-  articles:Array<any>;
+  articles: Array<any>;
   constructor(private newsapi:NewsapiService) { }
 
   ngOnInit() {

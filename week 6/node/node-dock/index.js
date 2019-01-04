@@ -77,4 +77,6 @@ app.get('/:id', (req, res) => {
         res.end('User does not exist!')
 })
 
-app.listen(3000)
+app.listen(3000, () => {
+    console.log('Server running at 3000')
+})
