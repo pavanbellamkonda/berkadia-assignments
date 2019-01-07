@@ -25,7 +25,7 @@ if (!module.parent) app.listen(3000);
 
 ->Sails.js is another MVC framework for Node.js which was also created by the team behind Express.js; however, it comes with better capabilities than the latter. Diving deeper, Sails comes with an object-rational mapping (ORM) solution to enable the use of literally any database. This Waterline tool saves Node.js developers the trouble of configuring multiple database queries. What is more, this MVC Node.js framework supports Socket.io by default, which makes it one of the best choices for social media apps, messaging tools, and collaborative software solutions.
 
-->Talking about other benefits of Sails.js, it is easily compatible with multiple front-end development platforms without restricting the developers’ choice of their toolset. It uses the same MVC structure as many other frameworks ensuring seamless transitions. The request handling mechanism in Sails.js is the same that is used in Express.js, thus giving it the same quality performance. In general, it’s a good solution for quick and easy building of browser-based apps.
+->Talking about other benefits of Sails.js, it is easily compatible with multiple front-end development platforms without restricting the developers' choice of their toolset. It uses the same MVC structure as many other frameworks ensuring seamless transitions. The request handling mechanism in Sails.js is the same that is used in Express.js, thus giving it the same quality performance. In general, it's a good solution for quick and easy building of browser-based apps.
 
 ->Sails.js was used in the development of websites for Verizon, a US-based telecommunications company, and the Detroit Lions, an American football team. In total, the homepage of the Sails.js framework lists about two dozen globally-known brands that chose it for their development.
 
@@ -38,7 +38,7 @@ if (!module.parent) app.listen(3000);
 
 -->LoopBack  [  GitHub Stars: 11036  ]
 
-->LoopBack is another creation of the Express.js team and is built right on top of it. Loopback is an API framework for Node.js allowing you to build APIs that work with any client and can connect various devices. APIs created with LoopBack can be easily connected to backend data sources. LoopBack is also known for the support of multiple databases – Oracle, MongoDB, and SQL.
+->LoopBack is another creation of the Express.js team and is built right on top of it. Loopback is an API framework for Node.js allowing you to build APIs that work with any client and can connect various devices. APIs created with LoopBack can be easily connected to backend data sources. LoopBack is also known for the support of multiple databases like Oracle, MongoDB, and SQL.
 
 ->Another useful feature of LoopBack is the built-in API explorer allowing software developers to generate API documentation and SDKs.
 
@@ -54,7 +54,7 @@ if (!module.parent) app.listen(3000);
 
 -->Hapi.js  [  GitHub Stars: 9485  ]
 
-->Unlike many other frameworks we’ve mentioned here, Hapi.js has nothing to do with Express.js, and thus may be considered one of its competitors. Hapi.js was first created with the aim of supporting the work of a large distributed team, and since then the framework is considered to be the perfect choice for enterprise-size applications that are built by large and distributed teams.
+->Unlike many other frameworks we've mentioned here, Hapi.js has nothing to do with Express.js, and thus may be considered one of its competitors. Hapi.js was first created with the aim of supporting the work of a large distributed team, and since then the framework is considered to be the perfect choice for enterprise-size applications that are built by large and distributed teams.
 
 ->Hapi.js enables great collaboration possibilities through focus on plugins that allow working on separate components without affecting the rest of the application. This framework is very well suited for creating reusable components that will help businesses reduce development time.
 
