@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
 const fs = require('fs')
+const cors = require('cors')
 const BodyParser = require('body-parser');
 app.use(BodyParser.json({ limit: "10mb" }));
+app.use(cors())
 
 //End-point to retrieve list of movies available
 app.get('/movies', (req, res) => {
