@@ -1,0 +1,47 @@
+<a [routerLink]="back" target="_top"><button type="button" class="btn btn-primary btn-sm" style="display: table; margin: 0 auto">Go
+        back</button></a>
+<br>
+<table class="table table-sm" style="width: 50%;margin-left: auto;margin-right: auto;">
+    <tbody>
+        <tr>
+            <th scope="row">Enter your name:</th>
+            <td><input type="email" class="form-control" [(ngModel)]="user_name" [ngModelOptions]="{standalone: true}" placeholder="User name"></td>
+        </tr>
+        <tr>
+            <th scope="row">Movie name: </th>
+            <td>{{show.movie}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Theatre name: </th>
+            <td>{{show.theatre}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Ticket price: </th>
+            <td>{{show.price}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Date and time: </th>
+            <td>{{show.date}} {{show.time}}</td>
+        </tr>
+        <tr>
+            <th scope="row">Tickets available: </th>
+            <td>{{show.tickets_available}}</td>
+        </tr>
+        <tr *ngIf="show.tickets_available > 0; else tickets_unavailable">
+            <th scope="row">Select the number of tickets: </th>
+            <td>
+                <div class="form-check form-check-inline" *ngFor="let i of book">
+                    <input class="form-check-input" (click)="getCount(i)" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">{{i}}</label>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<button *ngIf="show.tickets_available > 0" type="button" class="btn btn-primary btn-lg" style="display: table; margin: 0 auto" (click)="bookShow()">Book
+    now</button>
+<button *ngIf="show.tickets_available == 0" type="button" class="btn btn-primary btn-lg" style="display: table; margin: 0 auto"
+    disabled>Book now</button>
+<ng-template #tickets_unavailable>
+    <p style="color:red">Sorry tickets unavailable</p>
+</ng-template>  

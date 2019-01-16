@@ -1,0 +1,46 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Book Marvel Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/admin-home">Admin-Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin-movies">Admin-Movies </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin-theatres">Admin-Theatres </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin-shows">Admin-Shows </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin-bookings">Admin-Bookings </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<table class="table table-borderless" style="text-align: center">
+  <tbody>
+    <tr>
+      <td>
+        <button type="button" class="btn btn-primary btn-lg" routerLink="/admin-movies">Go to Movies</button>
+        <span style="padding-left: 30px"></span>
+        <button type="button" class="btn btn-primary btn-lg" routerLink="/admin-theatres">Go to Theatres</button>
+      </tr>
+    <tr>
+      <td>
+        <button type="button" class="btn btn-primary btn-lg" routerLink="/admin-shows">Go to Shows</button>
+        <span style="padding-left: 30px"></span>
+        <button type="button" class="btn btn-primary btn-lg" routerLink="/admin-bookings">Go to Bookings</button>
+      </tr>
+  </tbody>
+</table>

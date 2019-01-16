@@ -1,0 +1,105 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Book Marvel Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin-home">Admin-Home</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/admin-movies">Admin-Movies  <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin-theatres">Admin-Theatres </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin-shows">Admin-Shows </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/admin-bookings">Admin-Bookings </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<br>
+<br>
+<div class="btn-group btn-group-lg" role="group">
+  <span style="padding-left: 30px"></span>
+  <button type="button" class="btn btn-primary" (click)="viewMode='view'">View Movies</button>
+  <span style="padding-left: 30px"></span>
+  <button type="button" class="btn btn-primary" (click)="viewMode='add'">Add new Movie</button>
+  <span style="padding-left: 30px"></span>
+  <button type="button" class="btn btn-primary" (click)="viewMode='delete'">Delete Movie</button>
+</div>
+
+<br>
+<br>
+
+<div [ngSwitch]="viewMode">
+  <div *ngSwitchCase="'view'">
+      <h2>List of all Movies:</h2>
+      <table class="table table-hover" style="text-align: center;">
+          <thead>
+              <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Image url</th>
+                  <th scope="col">Cast</th>
+                  <th scope="col">Rating</th>
+              </tr>
+          </thead>
+          <tbody *ngFor="let movie of movies">
+              <tr>
+                  <td>{{movie.name}}</td>
+                  <td>{{movie.image}}</td>
+                  <td>{{movie.cast}}</td>
+                  <td>{{movie.rating}}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  
+
+  <div *ngSwitchCase="'add'">
+      <h2>Add new Movie:</h2>
+      <form>
+          <div class="form-group">
+            <h3>Enter the details of the new movie</h3>
+            <label for="name">Enter name of movie:</label>
+            <input type="email" class="form-control" id="name" [(ngModel)]="movie.name" [ngModelOptions]="{standalone: true}" aria-describedby="emailHelp" placeholder="Movie name">
+            <label for="image">Enter image url:</label>
+            <input type="email" class="form-control" id="image" [(ngModel)]="movie.image" [ngModelOptions]="{standalone: true}"  aria-describedby="emailHelp" placeholder="Image url">
+            <label for="cast">Enter cast of movie:</label>
+            <input type="email" class="form-control" id="cast" [(ngModel)]="movie.cast" [ngModelOptions]="{standalone: true}"  aria-describedby="emailHelp" placeholder="Movie cast">
+            <label for="rating">Enter rating of movie:</label>
+            <input type="number" class="form-control" id="rating" [(ngModel)]="movie.rating" [ngModelOptions]="{standalone: true}"  aria-describedby="emailHelp" placeholder="Movie rating">
+          </div>
+          <button type="submit" class="btn btn-primary" (click)="add()">Submit</button>
+        </form>
+  </div>
+
+  <div *ngSwitchCase="'delete'">
+      <table class="table table-hover" style="text-align: center;">
+          <thead>
+              <tr>
+                  <th scope="col">Name</th>
+                  <th scope="col">Cast</th>
+                  <th scope="col">Rating</th>
+              </tr>
+          </thead>
+          <tbody *ngFor="let movie of movies">
+              <tr>
+                  <td>{{movie.name}}</td>
+                  <td>{{movie.cast}}</td>
+                  <td>{{movie.rating}}</td>
+                  <td><button type="button" class="btn btn-primary" (click)="delete(movie.name)">Delete Movie</button></td>
+              </tr>
+          </tbody>
+        </table>
+  </div>
+
+</div>

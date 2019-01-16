@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="#">Book Marvel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" routerLink="/movies">Movies <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/theatres">Theatres </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/login">Login as admin</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+<br>
+<br>
+<div class="text-center" *ngFor="let movie of movieData">
+    <img src="{{movie.image}}" class="img-fluid" style="width: 30%; height: 200px" alt="Image not available">
+    <h5>Cast: {{movie.cast}}</h5>
+</div>
+<br>
+
+<table class="table table-hover" *ngIf="!show">
+    <thead>
+        <tr>
+            <th scope="col">Theatre</th>
+            <th scope="col">Date and Time</th>
+            <th scope="col">Ticket Price</th>
+            <th scope="col">Total Tickets</th>
+            <th scope="col">Tickets Available</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let show of shows">
+        <tr style="cursor: pointer" (click)="book(show)">
+            <td>{{show.theatre}}</td>
+            <td>{{show.date}} {{show.time}}</td>
+            <td>{{show.price}}</td>
+            <td>{{show.tickets_total}}</td>
+            <td>{{show.tickets_available}}</td>
+        </tr>
+    </tbody>
+</table>
+<div *ngIf="show">
+    <app-booking-view [show]="show" source="movie"></app-booking-view>
+</div>

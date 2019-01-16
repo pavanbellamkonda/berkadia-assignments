@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Book Marvel</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/movies">Movies <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/theatres">Theatres </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/login">Login as admin</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<br>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <!-- <nav class="navbar navbar-expand-md bg-light">
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link disabled"> Search by pin code: </a>
+          </li>
+          <li class="nav-item" *ngFor="let movie of movies">
+            <a class="nav-link" href="#" style="color:white; background: #555555; border-radius:20px">Rating :
+              {{movie.rating}}</a>
+          </li>
+          <li class="nav-item dropdown show">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+    <div class="row">
+      <div class="col-md-4" *ngFor="let movie of movies">
+        <div class="card mb-4 shadow-sm">
+          <img class="bd-placeholder-img card-img-top" width="100%" height="225" src={{movie.image}} alt="Image of {{movie.name}}">
+          <div class="card-body">
+            <h5 class="card-text">{{movie.name}}</h5>
+            <p class="card-text"><strong>Cast: </strong> {{movie.cast}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a [routerLink]="['/movie', movie.name]"><button type="button" class="btn btn-sm btn-outline-secondary">View
+                    shows</button></a>
+              </div>
+              <small class="text-muted"><strong>Rating: </strong> {{movie.rating}}</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

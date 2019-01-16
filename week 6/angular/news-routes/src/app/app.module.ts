@@ -9,28 +9,38 @@ import { SportsComponent } from './sports/sports.component';
 import { BusiComponent } from './busi/busi.component';
 import { TechComponent } from './tech/tech.component';
 import {RouterModule, Routes} from '@angular/router';
+import { CountryGuard } from './country.guard';
+import { SelectComponent } from './select/select.component';
 
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'select-country',
     pathMatch: 'full'
   },
   {
+    path: 'select-country',
+    component: SelectComponent
+  },
+  {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    canActivate: [CountryGuard]
   },
   {
     path: 'sports',
-    component: SportsComponent
+    component: SportsComponent,
+    canActivate: [CountryGuard]
   },
   {
     path: 'business',
-    component: BusiComponent
+    component: BusiComponent,
+    canActivate: [CountryGuard]
   },
   {
     path: 'tech',
-    component: TechComponent
+    component: TechComponent,
+    canActivate: [CountryGuard]
   }
 ];
 
@@ -40,14 +50,15 @@ const routes: Routes = [
     HomeComponent,
     SportsComponent,
     BusiComponent,
-    TechComponent
+    TechComponent,
+    SelectComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [NewsapiService],
+  providers: [NewsapiService, CountryGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
