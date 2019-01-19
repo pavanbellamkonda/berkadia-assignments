@@ -1,0 +1,26 @@
+<div *ngIf="viewMode == 'exam' && questions" style="text-align: center">
+  <p>{{current+1}}.{{getQuestion().question}}</p>
+  <br>
+  <div class="form-check form-check-inline" *ngFor="let i of getQuestion().answers">
+    <input class="form-check-input" type="radio" (click)="addAnswer(current, i)" name="inlineRadioOptions{{current}}"
+      id="inlineRadio1">
+    <label class="form-check-label" for="inlineRadio1">{{i}}</label>
+  </div>
+  <br>
+  <button (click)="prevQuestion()" *ngIf="!current == 0">prev question</button>
+  <button (click)="prevQuestion()" *ngIf="current == 0" disabled>prev</button>
+  <button (click)="nextQuestion()" *ngIf="isNext() && checkSubmit(current)">Submit and next</button>
+  <button *ngIf="!checkSubmit(current) && current != qlength-1" disabled>Submit and next</button>
+  <button (click)="submitExam()" *ngIf="!isNext() && checkSubmit(current)">submit exam</button>
+  <button (click)="submitExam()" *ngIf="!isNext() && !checkSubmit(current)" disabled>submit exam</button>
+</div>
+
+<div *ngIf="viewMode == 'summary'" style="text-align: center">
+  <h3>Percentage: {{percentage}}%</h3>
+  <div *ngFor="let q of questions; let in=index;">
+    {{in+1}}.{{q.question}}
+    <p>Correct answer: {{q.correct_answer}}</p>
+    <p [ngStyle]="{'background-color': getResponse(in).res ? 'green' : 'red'}">Your response:
+      {{getResponse(in).answer}}</p>
+  </div>
+</div>
