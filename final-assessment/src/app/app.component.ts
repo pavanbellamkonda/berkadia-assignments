@@ -20,17 +20,21 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.service.get().subscribe(result => {
-      //this.questions = this.shuffle(result['results']);
-      this.questions = result['results']
-      this.questions = this.questions.slice(0, 5);
+      //results are shuffled here
+      this.questions = this.shuffle(result['results']);
+      //this.questions = result['results']
+      //only five questions for easier debug
+      //this.questions = this.questions.slice(0, 5);
       this.questions.forEach(q => {
-        q.answers = [q.correct_answer].concat(q.incorrect_answers);
-        //q.answers = this.shuffle([q.correct_answer].concat(q.incorrect_answers));
+        //q.answers = [q.correct_answer].concat(q.incorrect_answers);
+        //shuffle answers
+        q.answers = this.shuffle([q.correct_answer].concat(q.incorrect_answers));
       })
       this.qlength = this.questions.length;
     });
   }
 
+  //add answer to temporary array
   addAnswer(id: number, ans: string) {
     if (this.tempAns.findIndex(ans => ans.id === id) === -1) {
       this.tempAns.push({
@@ -44,6 +48,7 @@ export class AppComponent implements OnInit {
     console.log(this.tempAns)
   }
 
+  //add answer to responses array
   submitAnswer(id: number) {
     if ((this.responses.findIndex(ans => ans.id === this.tempAns.find(ans => ans.id === id).id)) === -1) {
       if (this.questions[this.tempAns.find(ans => ans.id === id).id].correct_answer === this.tempAns.find(ans => ans.id === id).answer) {
@@ -75,6 +80,7 @@ export class AppComponent implements OnInit {
     }
   }
 
+  //check whether option is selected
   checkSubmit(id: number) {
     if (this.tempAns.findIndex(ans => ans.id === id) === -1) {
       return false;
@@ -82,13 +88,7 @@ export class AppComponent implements OnInit {
     return true;
   }
 
-  checkSubmitExam() {
-    if (this.qlength === this.responses.length) {
-      return true;
-    }
-    return false;
-  }
-
+  //submit all the responses
   submitExam() {
     this.submitAnswer(this.current);
     const correct = this.responses.filter(ans => ans.res === true).length;
@@ -96,10 +96,12 @@ export class AppComponent implements OnInit {
     this.viewMode = 'summary';
   }
 
+  //get response for a question by id
   getResponse(id: number) {
     return this.responses.find(ans => ans.id === id);
   }
 
+  //shuffle array elements
   shuffle(array: any[]) {
     var currentIndex = array.length;
     var temporaryValue, randomIndex;
@@ -119,19 +121,24 @@ export class AppComponent implements OnInit {
     return array;
   }
 
+  //get questions by current value
   getQuestion() {
     return this.questions[this.current];
   }
 
+  //get the next question
   nextQuestion() {
     this.submitAnswer(this.current);
     this.current += 1;
     console.log(this.qlength, this.current)
   }
+
+  //ge the prev question
   prevQuestion() {
     this.current -= 1;
   }
 
+  //is prev question possible
   isPrev() {
     if(this.current > 0) {
       return true;
@@ -139,6 +146,7 @@ export class AppComponent implements OnInit {
     return false;
   }
 
+  //is next question possible
   isNext() {
     if(this.current == this.qlength - 1) {
       return false;
